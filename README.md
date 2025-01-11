@@ -10,7 +10,7 @@ A Python script that allows you to forward messages from a Telegram channel/user
 ### ⭐ Features
 - 🔄 Forward messages in batches for better performance
 - 💾 Save progress and resume from last point
-- 📅 Add date headers in Persian calendar format
+- 📅 Add date headers in standard format (e.g., "Sunday 14 January 2024")
 - 🎯 Start forwarding from:
   - Beginning
   - Last saved point
@@ -21,9 +21,9 @@ A Python script that allows you to forward messages from a Telegram channel/user
 - 📊 Progress tracking and logging
 
 ### 🚀 Setup & Configuration
-1. Install required packages:
+1. Install python packages:
 ```bash
-pip install telethon jdatetime
+pip install telethon
 ```
 
 2. Configure the following variables in the script:
@@ -64,7 +64,7 @@ python telegram_forwarder.py
 ### ⭐ ویژگی‌ها
 - 🔄 انتقال پیام‌ها به صورت دسته‌ای برای عملکرد بهتر
 - 💾 ذخیره پیشرفت و ادامه از آخرین نقطه
-- 📅 اضافه کردن هدر تاریخ به فرمت تقویم شمسی
+- 📅 اضافه کردن هدر تاریخ به فرمت استاندارد (مثال: "Sunday 14 January 2024")
 - 🎯 شروع انتقال از:
   - ابتدا
   - آخرین نقطه ذخیره شده
@@ -77,7 +77,7 @@ python telegram_forwarder.py
 ### 🚀 نصب و پیکربندی
 1. نصب پکیج‌های مورد نیاز:
 ```bash
-pip install telethon jdatetime
+pip install telethon
 ```
 
 2. تنظیم متغیرهای زیر در اسکریپت:
