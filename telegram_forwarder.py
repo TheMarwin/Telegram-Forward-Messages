@@ -6,7 +6,6 @@ import json
 import os
 from datetime import datetime
 from telethon import types
-import jdatetime
 
 # Configure logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
@@ -91,14 +90,13 @@ def load_state():
         logger.error(f"Error loading state: {e}")
     return None
 
-def get_persian_date(date):
-    """Convert Gregorian date to Persian date string"""
+def get_formatted_date(date):
+    """Convert date to formatted string"""
     try:
-        persian_date = jdatetime.datetime.fromgregorian(datetime=date)
-        weekday = persian_date.strftime("%A")
-        day = persian_date.day
-        month = persian_date.strftime("%B")
-        year = persian_date.year
+        weekday = date.strftime("%A")
+        day = date.strftime("%d")
+        month = date.strftime("%B")
+        year = date.year
         return f"{weekday} {day} {month} {year}"
     except Exception as e:
         logger.error(f"Error converting date: {e}")
@@ -185,7 +183,7 @@ async def forward_messages(start_message_id=0, start_messages_forwarded=0, start
                     if current_date is None or message_date != current_date:
                         if not last_processed_date or message_date != last_processed_date:
                             try:
-                                date_header = f"---------- Messages from {get_persian_date(message_date)} ----------"
+                                date_header = f"---------- Messages of {get_formatted_date(message_date)} ----------"
                                 await client.send_message(target, date_header)
                                 await asyncio.sleep(2)
                             except Exception as e:
