@@ -33,7 +33,7 @@ api_hash = 'YOUR_API_HASH'
 source_user = '@SOURCE_CHANNEL'
 target_group = 'TARGET_GROUP_LINK'
 ```
-[🔑How To Get Telegram API key](https://github.com/TheMarwin/Telegram-Message-Forwarder/blob/main/Telegram_API_guide_en.md)
+[🔑How To Get Telegram API key](https://github.com/TheMarwin/Telegram-Forward-Messages/blob/main/Telegram_API_guide_en.md)
 
 
 ### 💻 Usage
@@ -87,7 +87,7 @@ api_hash = 'YOUR_API_HASH'
 source_user = '@SOURCE_CHANNEL'
 target_group = 'TARGET_GROUP_LINK'
 ```
-[🔑نحوه دریافت API تلگرام](https://github.com/TheMarwin/Telegram-Message-Forwarder/blob/main/Telegram_API_guide_fa.md)
+[🔑نحوه دریافت API تلگرام](https://github.com/TheMarwin/Telegram-Forward-Messages/blob/main/Telegram_API_guide_fa.md)
 
 ### 💻 نحوه استفاده
 1. اجرای اسکریپت:
